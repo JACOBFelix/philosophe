@@ -1,0 +1,52 @@
+.\" Manpage for philosophe.
+.\" Contact poulet_a@epitech.eu and jacob_f@epitech.eu .in to correct errors or typos.
+.TH man 1 " 2015" "1.0" "philosophe man page"
+.SH NAME
+philosophe \- Watch what the philosophes are paid for.
+.SH SYNOPSIS
+\fB./philo\fR [\fI-philo N\fR] [\fI-default_food N\fR] [\fI-max_hungry N\fR] [\fI-default_hungry N\fR] [\fI-time_think N\fR] [\fI-time_eat N\fR] [\fI-time_rest N\fR]
+
+\fB./philo_sdl\fR [\fI-philo N\fR] [\fI-default_food N\fR] [\fI-max_hungry N\fR] [\fI-default_hungry N\fR] [\fI-time_think N\fR] [\fI-time_eat N\fR] [\fI-time_rest N\fR]
+
+.SH DESCRIPTION
+\fBphilosophe\fR is a programm that emulate the solution about famine, discovered by philosophes Kant, Pascal, Marx, Voltaire, Ford, Nietzsche, Platon.
+
+\fBphilo\fR is the first application compiled with the rule \fall\fR (or the command \fmake\fR). It is fully compatible with TTY.
+
+\fBphilo_sdl\fR is the second application compiled with the rule \fsdl\fR (or the command \fmake sdl\fR). It requiere the \fSDL\fR library and a \fXorg\fR server running.
+
+.SH OPTIONS
+.TP
+\fB\-philo\fR \fBN\fR
+Defines the number of philosophes around the table with the argument. The table can accept a maximum of 496 threads.
+.TP
+\fB\-default_food\fR \fBN\fR
+Defines the number of food in the bols in front of each philosophe.
+.TP
+\fB\-default_hungry\fR \fBN\fR
+Defines the default indice of hungry than philosophe have when they arrived.
+.TP
+\fB\-max_hungry\fR \fBN\fR
+Defines the maximal indice of hungry than philosophe can have before to die.
+.TP
+\fB\-time_think\fR \fBN\fR
+Defines the time of thinking for each philosophe.
+.TP
+\fB\-time_eat\fR \fBN\fR
+Defines the time of eating for each philosophe.
+.TP
+\fB\-time_rest\fR \fBN\fR
+Defines the time of resting for each philosophe.
+.TP
+If an argument is invalid or the number is invalid, philo will run with default value.
+.TP
+Philo will not start if the number of philosophe is more than 496. The developer poulet_a will do the fowl for that and jacob_f will like it.
+.TP
+.SH SEE ALSO
+No related manpage.
+.SH REPORTING BUGS
+No known bugs.
+.br
+Report ./philosophe bugs to arthur.poulet@epitech.eu or to felix.jacob@epitech.eu
+.SH AUTHOR
+poulet_a, jacob_f
